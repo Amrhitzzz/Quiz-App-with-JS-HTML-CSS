@@ -1,0 +1,162 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<style>
+    :root{
+    --objbg:rgb(162, 197, 250);
+    --boxbg:#FFDCF4;
+    --ansfont: 22px;
+    --hover:rgb(243, 157, 87);
+    --font:black;
+    --heading:grey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body {
+    background-color: rgb(43, 43, 43);
+    
+}
+#pagenumber {
+    color: #2bvar(--font);
+    font-size: 18px;
+}
+.categoryitems{
+    margin:2% auto;
+    font-size: 20px;
+}
+
+.categoryitems  a{
+text-decoration: none;
+color: black;
+display: block;
+padding:10px;
+margin: 20px;
+background-color: var(--heading);
+transition: box-shadow .3s;
+border: 1px solid #ccc;
+
+}
+.categoryitems a:hover{
+    color:var(--hover);
+    box-shadow:  0 0 11px rgba(33,33,33,.2);
+    font-size: var(--ansfont);
+}
+
+ header{
+    
+     width: 100%;
+     margin: 0% auto 2% auto;
+     text-align: center;
+     padding: 2px;
+  
+ 
+ }
+
+.grid {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: var(--boxbg);
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+    
+    
+}
+ 
+.grid h1 {
+    font-family: "sans-serif";
+    background-color:var(--heading);
+    font-size: 30px;
+    text-align: center;
+    color: var(--font);
+    padding: 2px 0px;
+    margin-bottom: 2%;
+    
+}
+ 
+#score {
+    color: #01var(--font);
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    color: #01var(--font);
+}
+ 
+.buttons {
+    margin-top: 30px;
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: var(--objbg);
+    width: 100%;
+    font-size: 20px;
+    color: var(--font);
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color:var(--hover);
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+    border: 1px solid var(--heading);
+    box-shadow:  0 0 11px rgba(33,33,33,.2);
+    font-size: var(--ansfont);
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ footer{
+     background-color: var(--heading);
+     font-weight: lighter;
+     color: rgb(24, 24, 24);
+     text-align: center;
+ position: relative;
+ top: 150px;
+ font-size: 10px;
+ padding: 5px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+</style>
+<body>
+    <div class="grid">
+      
+<h1>Welcome to Quiz App</h1>
+  
+        <h2>Choose Quiz category</h2>
+        <hr style="height: 5px; background-color: rgb(77, 73, 73);" >
+        <div class="categoryitems">
+            <a href="/html files/science.html">1.Science</a>
+            <a href="/html files/math.html">2.Math</a>
+            <a href="/html files/computer.html">3.Computer</a>
+            <a href="/html files/iq.html">4.IQ</a>
+        </div>
+        <footer>
+
+            <h3>Quiz App Created by AMrhit Pradhan</h3>
+        </footer>
+    </div>
+
+ 
+ 
+
+ 
+</body>
+</html>
