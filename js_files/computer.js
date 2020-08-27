@@ -1,14 +1,15 @@
+// create questions here
+let questions = [
+    new Question("Longhorn was the code name of ?", ["Windows10", "Windows7","Windowsxp", "Windows Vista"], 3),
+    new Question("Do no evil' is tag line of ......?", ["google", "facebook", "yahoo", "nimbuzz"], 0),
+    new Question("World's first microprocessor is .....?", ["Intel 1200", "Intel 1404","Intel 1402", "Intel 4004"], 3),
+    new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], 0),
+    new Question("When was the first smart phone launched?", ["1999", "1990", "1992", "2000"], 2)
+];
 var i = 0;
 var SCORES = 0 ;
 
-let questions = [
-    new Question("In which year next worldcup is happening? ", ["2021", "2022","2023","2024"], 1),
-    new Question("From which country Corona Virus started?", ["India", "China", "Japan", "USA"], 1),
-    new Question("Who is the currently(2020AD) World's Richest Person in the world ?", ["Mark Zuckerberg", "BillGates","Binladen", "Jeff Bezos"], 3),
-    new Question("Most disliked video in the youtube?", ["Justin bieber", "Dinchak pooja", "Sadak2", "All"], 2),
-    new Question("Which year is this?", ["2020", "2021", "2022", "1980"], 0)
-];
- 
+
 
 function Question(question, options, answer) {
     this.question = question;
@@ -118,7 +119,7 @@ function init() {
         let button = document.createElement("button");
         button.setAttribute("class", "btn")
         let a = document.createElement("a")
-        a.setAttribute("href", "/index.html")
+        a.setAttribute("href", "../index.html")
         a.innerHTML = "Play Again"
         button.appendChild(a)
         container.appendChild(button)

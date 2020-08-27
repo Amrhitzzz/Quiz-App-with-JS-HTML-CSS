@@ -1,14 +1,14 @@
 // create questions here
 let questions = [
-    new Question("Which gas is safe and an effective extinguisher for all confined fires?", ["Nitrogen dioxide", "Carbon dioxide","Sulphur dioxide", "Nitrous Oxide"], 1),
-    new Question("Which one of the following waves are used by the common TV remote control?", ["Radio waves", "Lasers", "Infrared waves", "Ultrasonic waves"], 2),
-    new Question("Titanium Oxide is used for which of the following purpose?", ["Data Storage", "White Paint","Face powder", "All of the above"], 3),
-    new Question("Which metal is used by the jewellers to make gold and platinum ornaments heavier?", ["Rhodium", "Iridium", "Erbium", "Thorium"], 1),
-    new Question("What is the Function of Hydrochloric Acid?", ["It makes pepsin enzyme effective.", "It kills bacteria which may enter in stomach with food.", "Both", "None of above"], 2)
+    new Question(" All natural numbers and 0 are called the ……………….. numbers.", ["Whole", "prime","integer", "rational"], 0),
+    new Question("The wages of 10 workers for a six-day week is $ 1200. What are the one day’s wages of 4 workers?", ["$40", "$24", "$80", "$32"],2),
+    new Question("Which of the following numbers gives 240 when added to its own square?", ["15", "18","20", "16"], 0),
+    new Question("A clock strikes once at 1 o’clock, twice at 2 o’clock, thrice at 3 o’clock and so on. How many times will it strike in 24 hours?", ["78", "196", "156", "136"],2),
+    new Question("A car can cover a distance of 522 km on 36 liters of petrol. How far can it travel on 14 liters of petrol?", ["213 km", "223 km", "203 km", "302 km"],2)
 ];
- 
 var i = 0;
 var SCORES = 0 ;
+
 
 
 function Question(question, options, answer) {
@@ -119,7 +119,7 @@ function init() {
         let button = document.createElement("button");
         button.setAttribute("class", "btn")
         let a = document.createElement("a")
-        a.setAttribute("href", "/index.html")
+        a.setAttribute("href", "../index.html")
         a.innerHTML = "Play Again"
         button.appendChild(a)
         container.appendChild(button)

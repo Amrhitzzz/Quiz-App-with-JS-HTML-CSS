@@ -1,14 +1,14 @@
 // create questions here
 let questions = [
-    new Question("Longhorn was the code name of ?", ["Windows10", "Windows7","Windowsxp", "Windows Vista"], 3),
-    new Question("Do no evil' is tag line of ......?", ["google", "facebook", "yahoo", "nimbuzz"], 0),
-    new Question("World's first microprocessor is .....?", ["Intel 1200", "Intel 1404","Intel 1402", "Intel 4004"], 3),
-    new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], 0),
-    new Question("When was the first smart phone launched?", ["1999", "1990", "1992", "2000"], 2)
+    new Question("Which gas is safe and an effective extinguisher for all confined fires?", ["Nitrogen dioxide", "Carbon dioxide","Sulphur dioxide", "Nitrous Oxide"], 1),
+    new Question("Which one of the following waves are used by the common TV remote control?", ["Radio waves", "Lasers", "Infrared waves", "Ultrasonic waves"], 2),
+    new Question("Titanium Oxide is used for which of the following purpose?", ["Data Storage", "White Paint","Face powder", "All of the above"], 3),
+    new Question("Which metal is used by the jewellers to make gold and platinum ornaments heavier?", ["Rhodium", "Iridium", "Erbium", "Thorium"], 1),
+    new Question("What is the Function of Hydrochloric Acid?", ["It makes pepsin enzyme effective.", "It kills bacteria which may enter in stomach with food.", "Both", "None of above"], 2)
 ];
+ 
 var i = 0;
 var SCORES = 0 ;
-
 
 
 function Question(question, options, answer) {
@@ -119,7 +119,7 @@ function init() {
         let button = document.createElement("button");
         button.setAttribute("class", "btn")
         let a = document.createElement("a")
-        a.setAttribute("href", "/index.html")
+        a.setAttribute("href", "../index.html")
         a.innerHTML = "Play Again"
         button.appendChild(a)
         container.appendChild(button)

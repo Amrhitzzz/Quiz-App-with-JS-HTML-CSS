@@ -1,15 +1,14 @@
-// create questions here
-let questions = [
-    new Question(" All natural numbers and 0 are called the ……………….. numbers.", ["Whole", "prime","integer", "rational"], 0),
-    new Question("The wages of 10 workers for a six-day week is $ 1200. What are the one day’s wages of 4 workers?", ["$40", "$24", "$80", "$32"],2),
-    new Question("Which of the following numbers gives 240 when added to its own square?", ["15", "18","20", "16"], 0),
-    new Question("A clock strikes once at 1 o’clock, twice at 2 o’clock, thrice at 3 o’clock and so on. How many times will it strike in 24 hours?", ["78", "196", "156", "136"],2),
-    new Question("A car can cover a distance of 522 km on 36 liters of petrol. How far can it travel on 14 liters of petrol?", ["213 km", "223 km", "203 km", "302 km"],2)
-];
 var i = 0;
 var SCORES = 0 ;
 
-
+let questions = [
+    new Question("In which year next worldcup is happening? ", ["2021", "2022","2023","2024"], 1),
+    new Question("From which country Corona Virus started?", ["India", "China", "Japan", "USA"], 1),
+    new Question("Who is the currently(2020AD) World's Richest Person in the world ?", ["Mark Zuckerberg", "BillGates","Binladen", "Jeff Bezos"], 3),
+    new Question("Most disliked video in the youtube?", ["Justin bieber", "Dinchak pooja", "Sadak2", "All"], 2),
+    new Question("Which year is this?", ["2020", "2021", "2022", "1980"], 0)
+];
+ 
 
 function Question(question, options, answer) {
     this.question = question;
@@ -119,7 +118,7 @@ function init() {
         let button = document.createElement("button");
         button.setAttribute("class", "btn")
         let a = document.createElement("a")
-        a.setAttribute("href", "/index.html")
+        a.setAttribute("href", "../index.html")
         a.innerHTML = "Play Again"
         button.appendChild(a)
         container.appendChild(button)
